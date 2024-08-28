@@ -67,8 +67,6 @@ body {
     z-index: 10;
 }
 
-
-
 #page1 {
     height: 100vh;
     width: 100%;
@@ -104,7 +102,6 @@ body {
     width: 100%;
     position: relative;
     cursor: pointer;
-
 }
 
 .elem .blur {
@@ -181,9 +178,6 @@ body {
     font-style: italic;
 }
 
-
-
-
 #page3 {
     min-height: 100vh;
     width: 100%;
@@ -195,11 +189,10 @@ body {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-
 }
 
 .image-div {
-cursor: pointer;
+    cursor: pointer;
     width: 28vw;
     position: relative;
     overflow: hidden;
@@ -225,9 +218,9 @@ cursor: pointer;
     transition: all ease 0.5s;
     z-index: 9;
     flex-direction: column;
-
 }
-.overlay button{
+
+.overlay button {
     background: red;
     height: 2vw;
     width: 6vw;
@@ -251,9 +244,11 @@ cursor: pointer;
 .image-div:hover .overlay {
     background: #000;
 }
+
 .image-div:hover .overlay button {
     opacity: 1;
 }
+
 .image-div:hover .overlay p {
     opacity: 1;
 }
@@ -286,7 +281,118 @@ cursor: pointer;
     font-size: 1vw;
     cursor: pointer;
 }
-#footer p{
+
+#footer p {
     color: white;
     margin: revert;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    /* Tablets */
+    #loader h1,
+    #page1 h1,
+    .elem h2 {
+        font-size: 8vw;
+        line-height: 6vw;
+    }
+
+    .elem .blur {
+        width: 70%;
+        height: 80px;
+        box-shadow: 10px 0px 20px 15px red, -10px 0px 20px 75px red;
+    }
+
+    .image-div {
+        width: 40%;
+        margin: 30px auto;
+    }
+
+    .overlay button {
+        height: 4vw;
+        width: 12vw;
+    }
+
+    .overlay p {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+    }
+
+    #footer #foot,
+    #footer h2 {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Large Mobile Phones */
+    #loader h1,
+    #page1 h1,
+    .elem h2 {
+        font-size: 10vw;
+        line-height: 8vw;
+    }
+
+    .elem .blur {
+        width: 80%;
+        height: 60px;
+        box-shadow: 8px 0px 16px 10px red, -8px 0px 16px 50px red;
+    }
+
+    .image-div {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .overlay button {
+        height: 5vw;
+        width: 16vw;
+    }
+
+    .overlay p {
+        font-size: 4.5vw;
+        line-height: 4.5vw;
+    }
+
+    #footer #foot,
+    #footer h2 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small Mobile Phones */
+    #loader h1,
+    #page1 h1,
+    .elem h2 {
+        font-size: 12vw;
+        line-height: 10vw;
+    }
+
+    .elem .blur {
+        width: 90%;
+        height: 40px;
+        box-shadow: 5px 0px 10px 5px red, -5px 0px 10px 25px red;
+    }
+
+    .image-div {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .overlay button {
+        height: 8vw;
+        width: 24vw;
+    }
+
+    .overlay p {
+        font-size: 5.5vw;
+        line-height: 5.5vw;
+    }
+
+    #footer #foot,
+    #footer h2 {
+        font-size: 3vw;
+    }
+}
+Key Poin
